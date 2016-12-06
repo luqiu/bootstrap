@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="node_modules/bootstrap-3.3.2-dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="css/personal.css" />
+	</head>
+
+	<body>
+		<script src="js/header.js" type="text/javascript" charset="utf-8"></script>
+		<!--网页导航-->
+		<div id="el_nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#"><img src="img/logo.png"></a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="#">我要投资</a>
+					</li>
+					<li>
+						<a href="#">我要借款</a>
+					</li>
+					<li class="active">
+						<a href="personal.html">个人中心</a>
+					</li>
+					<li>
+						<a href="#">新手指引</a>
+					</li>
+					<li>
+						<a href="#">关于我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<!--左侧导航-->
+			<script src="js/personal_menu.js" type="text/javascript" charset="utf-8"></script>
+			<div class="col-md-9">
+				<div class="panel panel-default">
+					<div class="panel-heading">还款计划</div>
+					<div class="panel-body">
+						<table class="table table-striped">
+							<thead><tr><th>日期</th><th>期数</th><th>金额(元)</th><th>本金(元)</th><th>利息(元)</th><th>状态</th><th>详情</th><th>操作</th></tr></thead>
+							<tbody>
+								<tr><td>2016-07-08</td><td>11</td><td>1000</td><td class="text-info">990</td><td class="text-danger">10</td><td>已还</td><td class="text-info">江湖救急<i class="xinI">信</i></td><td colspan="1"></td></tr>
+								<tr><td>2016-07-08</td><td>11</td><td>1000</td><td class="text-info">990</td><td class="text-danger">10</td><td>已还</td><td class="text-info">江湖救急<i class="xinI">信</i></td><td><a href="#">马上还款</a></td></tr></tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/footer.js" type="text/javascript" charset="utf-8"></script>
+
+	</body>
+	<script src="node_modules/jquery/jquery-2.1.3.min.js"></script>
+	<script src="node_modules/bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+
+</html>

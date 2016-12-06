@@ -1,0 +1,28 @@
+.people img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+}
+.people i {
+  display: inline-block;
+  color: #fff;
+  background-color: #5cb85c;
+  padding: 4px 6px;
+  border-radius: 5px;
+}
+.text-info {
+  color: #09d;
+  margin: 5px 0;
+}
+
+table,
+.people-info {
+  font-size: 16px;
+}
+.muted {
+  color: #999;
+}
+.people-info span {
+  margin-left: 30px;
+}

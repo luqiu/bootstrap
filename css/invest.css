@@ -1,0 +1,20 @@
+#serchForm > div {
+  margin: 20px 0;
+}
+#serchForm > div span {
+  color: #777;
+}
+#serchForm > div .biao-zt {
+  margin-left: 30px;
+}
+#serchForm > div .biao-zt input {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+#el_table thead {
+  color: #999;
+  font-size: 16px;
+}
+#el_table tbody tr td {
+  vertical-align: middle;
+}

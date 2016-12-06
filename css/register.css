@@ -1,0 +1,32 @@
+#el_nav > div > div > p {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 20px;
+  margin-left: 20px;
+  color: #337ab7;
+}
+#register_form {
+  width: 600px;
+  margin: 20px auto;
+}
+#register_form input {
+  width: 220px;
+}
+#register_form > p {
+  font-size: 18px;
+  margin: 10px 10px 20px 10px;
+  color: #999999;
+}
+#register_form button {
+  width: 100px;
+}
+#register_form a {
+  text-decoration: none;
+}
+#register_form .xieyi {
+  margin: 20px;
+}
+#register_form .xieyi input {
+  width: 14px;
+  height: 14px;
+}

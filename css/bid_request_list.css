@@ -1,0 +1,27 @@
+#el_table thead {
+  font: 16px "微软雅黑";
+}
+#el_table td {
+  line-height: 30px;
+}
+#el_table td .xinI {
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  background-color: #337ab7;
+  font-style: normal;
+  color: #fff;
+  text-align: center;
+  font: 12px/20px "微软雅黑";
+  border-radius: 5px;
+  margin-left: 3px;
+}
+#el_table td span {
+  color: #3c763d;
+}
+#el_table td span:first-child {
+  color: #777;
+}
+#el_table td span:last-child {
+  color: #a94442;
+}

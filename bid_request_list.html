@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="node_modules/bootstrap-3.3.2-dist/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/personal.css" />
+		<link rel="stylesheet" type="text/css" href="css/bid_request_list.css"/>
+	</head>
+
+	<body>
+		<script src="js/header.js" type="text/javascript" charset="utf-8"></script>
+		<!--网页导航-->
+		<div id="el_nav" class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="#"><img src="img/logo.png"></a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="index.html">首页</a>
+					</li>
+					<li>
+						<a href="#">我要投资</a>
+					</li>
+					<li>
+						<a href="#">我要借款</a>
+					</li>
+					<li class="active">
+						<a href="personal.html">个人中心</a>
+					</li>
+					<li>
+						<a href="#">新手指引</a>
+					</li>
+					<li>
+						<a href="#">关于我们</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="container">
+			<!--左侧导航-->
+			<script src="js/personal_menu.js" type="text/javascript" charset="utf-8"></script>
+			<!--右侧详情-->
+			<div class="col-md-9">
+				<div class="panel panel-default">
+					<div class="panel-heading">借款项目</div>
+					<div class="panel-body">
+						<table class="table table-hover table-striped" id="el_table">
+						<thead><tr><th>标题</th>	<th>时间</th>	<th>借款金额(元)</th><th>期限</th><th>利率</th><th>状态</th></tr></thead>	
+							<tr><td><a href="###">江湖救急</a><i class="xinI">信</i></td><td>2016-01-02</td><td>2000</td><td>12月</td><td>12%</td><td><span>待发布</span> <span>招标中</span> <span>满标未审核</span> <span>还款中</span> <span>招标拒绝</span></td></tr>
+							<tr><td><a href="###">江湖救急2</a><i class="xinI">信</i></td><td>2016-01-02</td><td>2000</td><td>12月</td><td>12%</td><td><span>待发布</span> <span>招标中</span> <span>满标未审核</span> <span>还款中</span> <span>招标拒绝</span></td></tr>
+							<tr><td><a href="###">江湖救急3</a><i class="xinI">信</i></td><td>2016-01-02</td><td>2000</td><td>12月</td><td>12%</td><td><span>待发布</span> <span>招标中</span> <span>满标未审核</span> <span>还款中</span> <span>招标拒绝</span></td></tr>
+							<tr><td><a href="###">江湖救急4</a><i class="xinI">信</i></td><td>2016-01-02</td><td>2000</td><td>12月</td><td>12%</td><td><span>待发布</span> <span>招标中</span> <span>满标未审核</span> <span>还款中</span> <span>招标拒绝</span></td></tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/footer.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+	<script src="node_modules/jquery/jquery-2.1.3.min.js"></script>
+	<script src="node_modules/bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+
+	<script type="text/javascript">
+		$(".content a").on("mouseenter", function() {
+			$(".content a").removeClass("active_mou");
+			$(this).addClass("active_mou");
+		}).on("click", function() {
+			$(".content a").removeClass("active_cli");
+			$(this).addClass("active_cli");
+		})
+	</script>
+
+</html>

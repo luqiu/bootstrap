@@ -1,0 +1,43 @@
+#el_borrow {
+  margin: 30px 0;
+}
+#el_borrow .top {
+  font: 24px/48px "微软雅黑";
+  color: #fff;
+  padding-left: 20px;
+}
+#el_borrow .bottom {
+  padding: 14px;
+  background-color: #f9f9f9;
+}
+#el_borrow .bottom p:first-child {
+  font-size: 16px;
+}
+#el_borrow .bottom p.help-block {
+  font-size: 13px;
+  color: #737373;
+  margin-top: 5px;
+}
+#el_borrow .bottom ul {
+  list-style: none;
+  padding-left: 10px;
+  margin-top: 10px;
+}
+#el_borrow .bottom ul li {
+  font-size: 14px;
+  color: #333;
+  margin-top: 5px;
+  padding-left: 20px;
+  background: url(../img/sequare.png) no-repeat left center;
+}
+#el_borrow .bottom a.apply {
+  display: block;
+  width: 80px;
+  height: 30px;
+  background-color: #00a8ff;
+  color: #fff;
+  text-align: center;
+  font: 16px/30px "微软雅黑";
+  margin: 0 auto;
+  border-radius: 15px;
+}
