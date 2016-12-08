@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--添加的时候的模态框-->
+<div class="modal fade" id="create1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">添加数据</h4>
+            </div>
+            <div class="modal-body">
+                <form action="" class="form-horizontal" id="form1">
+                    <div class="form-group">
+                        <label for=""  class="col-sm-2 control-label">姓名</label>
+
+                        <div class="col-sm-10"><input type="text"  name="username" class="form-control "></div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="control-label col-sm-2">身份证</label>
+                        <div class="col-sm-10"><input type="text" name="cid" class="form-control"></div>
+
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="control-label col-sm-2">电话</label>
+                        <div class="col-sm-10"><input type="text" name="phone" class="form-control"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="control-label col-sm-2">城市</label>
+                        <div class="col-sm-10"><input type="text" name="city" class="form-control"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="" class="control-label col-sm-2">状态</label>
+                        <div class="col-sm-10" name="status">
+                            <select name="" id="" class="form-control">
+                                <option value="">审核失败</option>
+                                <option value="">审核通过</option>
+                                <option value="">待审核</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-success" id="save">保存</button>
+                <button  class="btn btn-danger" data-dismiss="modal">取消</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

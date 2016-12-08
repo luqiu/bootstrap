@@ -1,0 +1,119 @@
+@charset "utf-8";
+#el-top {
+  margin-bottom: 0;
+  border-radius: 0;
+}
+#el-top a {
+  color: #fff;
+}
+#el-top a:hover {
+  text-decoration: underline;
+  color: #337ab7;
+}
+#el-top .navbar-brand a {
+  font-size: 24px;
+  line-height: 50px;
+  text-decoration: none;
+}
+#el-top .navbar-brand a:hover {
+  color: white;
+  text-decoration: none;
+}
+#el-top .navbar-brand {
+  padding-top: 0;
+}
+#el-nav {
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+#el-nav .navbar-header {
+  padding-top: 25px;
+  margin-right: 20px;
+  padding-bottom: 10px;
+}
+#el-nav .navbar-nav li > a {
+  line-height: 80px;
+  min-width: 80px;
+  text-align: center;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#el-nav .navbar-nav li > a:hover {
+  background: #f0f0f0;
+}
+#el-banner {
+  background-color: #666;
+}
+#el-banner .carousel-inner img {
+  margin: 0 auto;
+}
+#el-banner .carousel-inner div:nth-of-type(1) {
+  background-color: #23A2E7;
+}
+#el-banner .carousel-inner div:nth-of-type(2) {
+  background-color: #23A2E7;
+}
+#el-banner .carousel-inner div:nth-of-type(3) {
+  background-color: #23A2E7;
+}
+#el-main dl {
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+#el-main dl dt,
+#el-main dl dd {
+  margin-left: 80px;
+}
+#el-main dl dt {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+#el-main dl dd {
+  color: #999;
+}
+#feature01 dl {
+  background: url("../img/feature01.png") no-repeat;
+}
+#feature02 dl {
+  background: url("../img/feature02.png") no-repeat;
+}
+#feature03 dl {
+  background: url("../img/feature03.png") no-repeat;
+}
+.pannel-heading {
+  margin-top: 20px;
+}
+.pannel-heading span:nth-of-type(1) {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2e8ece;
+  border-bottom: 4px solid #2e8ece;
+}
+.pannel-heading span:nth-of-type(2) {
+  padding-top: 10px;
+}
+#el-borrowTable tr {
+  font-size: 16px;
+}
+#el-borrowTable tr:nth-of-type(1) {
+  color: #999;
+  font-weight: bold;
+  font-size: 14px;
+}
+/*新闻列表样式*/
+#el-news .list-group {
+  padding-top: 20px;
+}
+#el-news .list-group > li {
+  list-style: none;
+  height: 38px;
+  line-height: 38px;
+  border-bottom: 1px solid #ccc;
+}
+#el-news .pannel-heading {
+  border-bottom: 1px solid #ccc;
+}
+#el-footer {
+  padding-top: 20px;
+  background-color: #f8f8f8;
+}

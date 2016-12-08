@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>蓝源Eloan-P2P平台</title>
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css " type="text/css" />
+		<link rel="stylesheet" href="css/core.css " type="text/css" />
+		<script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js "></script>
+		<script type="text/javascript" src="node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+		<script src="js/jquery.twbsPagination.js"></script>
+		<link type="text/css" rel="stylesheet" href="css/account.css" />
+		<style type="text/css">
+			#realAuthForm input ,#realAuthForm select{
+				width: 260px;
+			}
+
+			.idCardItem{
+				width: 160px;
+				height: 150px;
+				float:left;
+				margin-right:10px;
+				border: 1px solid #e3e3e3;
+				text-align: center;
+				padding: 5px;
+			}
+			.uploadImg{
+				width: 120px;
+				height: 100px;
+				margin-top: 5px;
+			}
+			.swfupload{
+				left: 0px;
+			}
+			.uploadify{
+				height: 20px;
+				font-size:13px;
+				line-height:20px;
+				text-align:center;
+				position: relative;
+				background-color: #337ab7;
+			    border-color: #2e6da4;
+			    color: #fff;
+			}
+			
+			#viewExample{
+				position: relative;
+				left: 50px;
+				top: 60px;
+			}
+			.uploadExample{
+				width: 200px;
+				height: 130px;
+			}
+			#table td{
+				vertical-align: middle;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<!-- 网页顶部导航 -->
+		<div class="el-header" >
+			<div class="container" style="position: relative;">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="index.html">首页</a></li>
+					<!--未登录
+
+					<li><a href="login.jsp">登录</a></li>
+					<li><a href="register.html">快速注册</a></li>
+-->
+					<!--已登录-->
+					<li>
+						<a class="el-current-user" href="personal.html">
+							小强
+						</a>
+					</li>
+					<li>
+						<a  href="recharge.html">
+							账户充值
+						</a>
+					</li>
+					<li>
+						<a  href="logout.html">
+							注销
+						</a>
+					</li>
+					<li><a href="#">帮助</a></li>
+				</ul>
+			</div>
+		</div>
+
+
+		<!-- 网页导航 -->
+		<div class="navbar navbar-default el-navbar">
+			<div class="container">
+				<div class="navbar-header">
+					<a href="/index.html">
+						<img alt="Brand" src="img/logo.png">
+					</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a href="">首页</a></li>
+					<li><a href="invest.html">我要投资</a></li>
+					<li><a href="borrow.html">我要借款</a></li>
+					<li class="active"><a href="personal.html">个人中心</a></li>
+					<li><a href="#">新手指引</a></li>
+					<li><a href="#">关于我们</a></li>
+				</ul>
+			</div>
+		</div>
+		
+		<div class="container">
+			<div class="row">
+				<!--导航菜单-->
+				<div class="col-sm-3">
+					<ul id="menu" class="list-group">
+						<li class="list-group-item">
+							<a href="bid_list.html"> <span>投资项目</span></a>
+						</li>
+						<li class="list-group-item">
+							<a href="javascript:;"><span>借款项目</span></a>
+							<ul>
+								<li><a href="bid_request_list.html"><span>借款项目</span></a></li>
+								<li><a href="borrowBidReturn_list11.html"><span>还款明细</span></a></li>
+							</ul>
+						</li>
+						<li class="list-group-item">
+							<a href="#"><span class="text-title">我的账户</span></a>
+							<ul class="in">
+								<li><a href="personal.html">账户信息</a></li>
+								<li class="active"><a href="realAuth.html">实名认证</a></li>
+								<li><a href="#">银行卡管理</a></li>
+								<li><a href="#">登录记录</a></li>
+							</ul>
+						</li>
+						<li class="list-group-item">
+							<a href="#"><span>资产详情</span></a>
+							<ul class="in">
+								<li><a href="accountFlow_list.html">账户流水</a></li>
+								<li><a href="recharge_list.html">充值明细</a></li>
+								<li><a>提现记录</a></li>
+								<li><a>收款明细</a></li>
+							</ul>
+						</li>
+						<li class="list-group-item">
+							<a href="userInfo.html"> <span>个人资料</span></a>
+						</li>
+					</ul>
+				</div>
+				<!-- 功能页面 -->
+				<div class="col-sm-9">
+					<div class="panel panel-default">
+						<div class="panel-heading clearfix">
+							<span class="pull-left">实名认证管理</span>
+							<span class="pull-right"><a href="" id="tianjia" class="btn btn-success" data-toggle="modal" data-target="#create">添加</a></span>
+						</div>
+						<table class="table table-bordered" id="table">
+							<thead>
+								<tr>
+									<th>id</th>
+									<th>姓名</th>
+									<th>身份证</th>
+									<th>电话</th>
+									<th>城市</th>
+									<th>状态</th>
+									<th>操作</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>id</td>
+									<td>姓名</td>
+									<td>身份证</td>
+									<td>电话</td>
+									<td>城市</td>
+									<td>状态</td>
+									<td>操作</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row el-footer">
+			<div class="container">
+				<div class="col-sm-8">
+					<p>专业Java培训、PHP培训、UI培训、iOS培训、高级Web前端培训机构</p>
+					<p>版权所有：&emsp;2006-2016成都源代码教育咨询有限公司</p>
+					<p>地&emsp;&emsp;址：&emsp;成都市高新区府城大道西段399号天府新谷1号楼620-625</p>
+					<p>电&emsp;&emsp;话：&emsp;028-86261949&nbsp; / 400-808-6840&emsp;
+						邮箱：&emsp;yuandaima@itsource.cn</p>
+					<p>
+						<a href="http://www.miitbeian.gov.cn">蜀ICP备14030149号-1</a>&emsp;&emsp;<a
+							href="http://www.gaj.chengdu.gov.cn">蜀公网安备510114990541</a>
+					</p>
+					<div style="display: inline-block; overflow: hidden; float: left;"></div>
+				</div>
+				<div class="col-sm-2">
+					<div>
+						<p
+								style="padding-bottom: 15px; font-size: 14px; padding-left: 10px;">官方微博：</p>
+						<a href="http://t.qq.com/it-source" target="_blank"> <img
+								src="images/tecent.png" alt="Responsive image">
+						</a> <a href="http://weibo.com/cditcast" target="_blank"> <img
+							src="images/sina.png" alt="Responsive image">
+					</a>
+					</div>
+				</div>
+				<div class="col-sm-2">
+					<div>
+						<p
+								style="padding-bottom: 15px; font-size: 14px; padding-left: 10px;">官方微信：</p>
+						<img src="images/wx.jpg" alt="Responsive image"
+							 class="img-responsive">
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--添加的时候的模态框-->
+		<div class="modal fade" id="create1">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title">添加数据</h4>
+					</div>
+					<div class="modal-body">
+						<form action="" class="form-horizontal" id="form1">
+							<div class="form-group">
+								<label for=""  class="col-sm-2 control-label">姓名</label>
+
+								<div class="col-sm-10"><input type="text"  name="username" class="form-control "></div>
+
+							</div>
+							<div class="form-group">
+								<label for="" class="control-label col-sm-2">身份证</label>
+								<div class="col-sm-10"><input type="text" name="cid" class="form-control"></div>
+
+							</div>
+							<div class="form-group">
+								<label for="" class="control-label col-sm-2">电话</label>
+								<div class="col-sm-10"><input type="text" name="phone" class="form-control"></div>
+							</div>
+							<div class="form-group">
+								<label for="" class="control-label col-sm-2">城市</label>
+								<div class="col-sm-10"><input type="text" name="city" class="form-control"></div>
+							</div>
+							<div class="form-group">
+								<label for="" class="control-label col-sm-2">状态</label>
+								<div class="col-sm-10" name="status">
+									<select name="" id="" class="form-control">
+										<option value="">审核失败</option>
+										<option value="">审核通过</option>
+										<option value="">待审核</option>
+									</select>
+								</div>
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+						<button class="btn btn-success" id="save">保存</button>
+						<button  class="btn btn-danger" data-dismiss="modal">取消</button>
+
+					</div>
+				</div>
+			</div>
+	</body>
+
+	<script type="text/javascript">
+		
+	</script>
+</html>
